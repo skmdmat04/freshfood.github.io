@@ -1,0 +1,192 @@
+/* CSS Reset*/
+*{
+   margin: 0;
+   padding: 0;
+}
+html{
+   scroll-behavior:smooth;
+}
+ 
+/* CSS varriable */
+:root{
+   --navbar-height:59px
+}
+/* Navigation bar */ 
+#navbar{
+   display:flex;
+ align-items: center;
+position: relative;
+ top:0px;
+}
+#navbar::before{
+   content: "";
+   background-color: black;
+   position: absolute;
+   top:0px;
+   height:100%;
+   width: 100%;
+   z-index: -1;
+   
+}
+/* Navigation Bar:Logo and Image*/
+
+   #logo{
+    margin: 10px 34px;
+}
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+ } 
+ /* Navigation bar:List Styling */
+#navbar ul{
+   
+display: flex;
+}
+#navbar ul li{
+   list-style: none;
+   font-size: 1.3rem;
+}
+#navbar ul li a{
+   
+   color: white;
+   display: block;
+   padding: 3px 6px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+#navbar ul li a:hover{
+   color: black;
+   background-color: white;
+}
+/*home section*/
+#home{
+   display: flex;
+   flex-direction: column;
+   padding: 3px 200px;
+   height: 550px;
+   justify-content: center;
+   align-items: center;
+   
+}
+#home::before{
+   content: "";
+   position: absolute;
+   background: url('image/bckimg2.jpg') no-repeat center center/cover ;
+   height: 642px;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   z-index: -1;
+   
+   
+}
+#home h1{
+color:white;
+   text-align: center;
+   
+
+}
+#home p{
+   color:white;
+   text-align: center;
+   font-size: 1.5rem;
+}
+/* services section */
+#services{
+   margin: 34px;
+   display: flex;
+}
+#services .box{
+   border: 2px solid brown;
+   padding: 34px;
+   margin: 2px 55px;
+   border-radius: 28px;
+   background: #f2f2f2;
+   text-align: center;
+}
+#services .box img{
+   height: 160px;
+  margin: auto;
+  display: block;
+  background-color: black;
+}
+#service .box p{
+   font-family: 'Bree serif', serif;
+}
+/*client section*/
+#client-section{
+   position: relative;
+}
+#client-section::before{
+   content: "";
+   position: absolute;
+   background: url('image/bg.jpg');
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   opacity: 0.3;
+}
+#clients{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+.client-item{
+   padding: 34px;
+}
+#clients img{
+   height: 124px;
+}
+/*contact section*/
+#contact-box{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 34px;
+}
+#contact::before{
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 88%;
+    opacity: .5;
+    z-index: -1;
+    background: url('image/bckimmg3.jpg') no-repeat center center/cover;
+}
+#contact-box input, #contact-box textarea{
+   width: 100%;
+   padding: .6rem;
+   border-radius: 9px;
+   font-size: 1rem;
+}
+footer{
+   background: black;
+   color: white;
+   padding: 12px;
+}
+
+.h-primary{
+    font-size: 2.3rem;
+    font-family: 'Bree serif',serif;
+    padding: 12px;
+
+}
+.h-secondary{
+   font-size: 1.8rem;
+   font-family: 'Bree serif',serif;
+   padding: 12px;
+}
+.center{
+   text-align: center;
+}
+.btn{
+   padding: 6px 20px;
+   border: 2px solid white;
+   background-color: brown;
+   color: white;
+   margin: 19px;
+   font-size: 1.5rem;
+   border-radius: 9px;
+   cursor: pointer;
+}
